@@ -1,0 +1,39 @@
+.error_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: #FF6060;
+    min-height: calc(100vh - 336px);
+
+    
+    &_quatreCent {
+        font-size: 288px;
+        line-height: 136px;
+    }
+    
+        &_introuvable {
+            font-size: 36px;
+        }
+        
+            &_link {
+                font-size: 18px;
+                color: $color-1;
+            }
+}
+
+@include breakpoints(850) { 
+    .error_page {
+        margin-bottom: 51px;
+        &_quatreCent {
+            font-size: 96px;
+        }
+            &_introuvable {
+                font-size: 18px;
+            }
+                &_link {
+                    font-size: 14px;
+                }
+    }
+}
